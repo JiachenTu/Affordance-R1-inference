@@ -3,9 +3,7 @@ __pycache__/
 *.pyc
 *.pyo
 
-# Results and large files
-results/
-video_frames/
+# Test images (but keep results and video_frames)
 test_images/
 
 # Temporary files

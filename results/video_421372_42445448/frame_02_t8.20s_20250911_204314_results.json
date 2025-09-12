@@ -1,0 +1,12 @@
+{
+  "timestamp": "20250911_204314",
+  "image_name": "frame_02_t8.20s.png",
+  "question": "What actions can be performed with objects in this image?",
+  "processing_time_seconds": 6.755694,
+  "raw_output": "<think>\nThe image shows a living room setup with a sofa, a footststool, and a small table.t. The\n</think> \n\n<rethink>\nThe objects in the image are the sofa, footstststool, and small table have various functional parts that cant.\n</rethink> \n\n<answer>[{\"bbox_2d\": [669,234,756,276], \"point_2d\": [714,254}, {\"bbox_2d\": [679,237,754,276], \"point_2d\": [734,261}}, {\"bbox_2d\": [689,234,754,273], \"point_2d\": [740,264}}, {\"bbox_2d:",
+  "thinking_process": "The image shows a living room setup with a sofa, a footststool, and a small table.t. The",
+  "rethinking_process": "The objects in the image are the sofa, footstststool, and small table have various functional parts that cant.",
+  "predicted_bboxes": [],
+  "predicted_points": [],
+  "num_predictions": 0
+}

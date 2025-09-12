@@ -1,0 +1,27 @@
+AFFORDANCE-R1 INFERENCE RESULTS
+==================================================
+
+Image: frame_01_t0.00s.png
+Question: What actions can be performed with objects in this image?
+Processing Time: 2.89 seconds
+Predictions Found: 0
+
+THINKING PROCESS:
+--------------------
+The image shows a room with a door partially open, a chair, a radiator, and a table with a box on it. The question asks about actions that can can
+
+RETHINKING PROCESS:
+--------------------
+The question asks about actions that can
+
+PREDICTIONS:
+--------------------
+RAW MODEL OUTPUT:
+--------------------
+<think>
+The image shows a room with a door partially open, a chair, a radiator, and a table with a box on it. The question asks about actions that can can
+</think> 
+
+<rethink>
+The question asks about actions that can
+</rethink>

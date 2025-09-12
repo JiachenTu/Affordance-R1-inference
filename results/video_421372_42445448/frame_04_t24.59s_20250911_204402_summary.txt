@@ -1,0 +1,38 @@
+AFFORDANCE-R1 INFERENCE RESULTS
+==================================================
+
+Image: frame_04_t24.59s.png
+Question: What actions can be performed with objects in this image?
+Processing Time: 5.61 seconds
+Predictions Found: 2
+
+THINKING PROCESS:
+--------------------
+The objects in the image are are a glass table, a decorative vase, a candle, a statue, and a necklace. The
+
+RETHINKING PROCESS:
+--------------------
+The objects in the image are a glass table, a decorative vase, a candle, a statue, and a necklace. The
+
+PREDICTIONS:
+--------------------
+Prediction 1:
+  Bounding Box: [752, 235, 962, 435]
+  Center Point: [866, 327]
+
+Prediction 2:
+  Bounding Box: [1045, 324, 1296, 490]
+  Center Point: [1184, 418]
+
+RAW MODEL OUTPUT:
+--------------------
+<think>
+The objects in the image are are a glass table, a decorative vase, a candle, a statue, and a necklace. The
+</think> 
+
+<rethink>
+The objects in the image are a glass table, a decorative vase, a candle, a statue, and a necklace. The
+</rethink> 
+
+<answer>[{"bbox_2d": [329,137,421,254], "point_2d": [379,191]}, {"bbox_2d": [457,189,567,286], "point_2d": [518,244}}]
+</answer>

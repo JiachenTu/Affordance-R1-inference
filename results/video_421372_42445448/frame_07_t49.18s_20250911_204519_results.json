@@ -1,0 +1,24 @@
+{
+  "timestamp": "20250911_204519",
+  "image_name": "frame_07_t49.18s.png",
+  "question": "What actions can be performed with objects in this image?",
+  "processing_time_seconds": 3.963623,
+  "raw_output": "<think>\nThe image shows a couch with cushions and a blanket, a lamp, and a radiator. The question asks about actions that can can\n<rethink>\nThe question asks about actions that can can\n<answer>[{\"bbox_2d\": [629,116,669,489], \"point_2d\": [661,125], \"affordance\": \"light\"}]</answer>",
+  "thinking_process": "",
+  "rethinking_process": "",
+  "predicted_bboxes": [
+    [
+      1438,
+      199,
+      1529,
+      838
+    ]
+  ],
+  "predicted_points": [
+    [
+      1511,
+      214
+    ]
+  ],
+  "num_predictions": 1
+}

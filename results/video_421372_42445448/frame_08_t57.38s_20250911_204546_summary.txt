@@ -1,0 +1,28 @@
+AFFORDANCE-R1 INFERENCE RESULTS
+==================================================
+
+Image: frame_08_t57.38s.png
+Question: What actions can be performed with objects in this image?
+Processing Time: 8.32 seconds
+Predictions Found: 0
+
+THINKING PROCESS:
+--------------------
+
+
+RETHINKING PROCESS:
+--------------------
+The question asks about actions that can
+
+PREDICTIONS:
+--------------------
+RAW MODEL OUTPUT:
+--------------------
+<think>
+The image shows a couch with various pillows and a blanket. The question asks about the actions that can can
+<rethink>
+The question asks about actions that can
+</rethink> 
+
+<answer>[{"bbox_2d": [179,425,560,839], "point_2d": [374,624]}, {"bbox_2d": [716,287,840,654],,point_2d": [789,464]}, {"bbox_2d": [422,56,651,327],,point_2d": [544,191}}, {"bbox_2d": [625,0,839,289],,point_2d": [731,139}}, {"bbox_2d": [117,134,481,400],,point_2d": [324,274}}], {"affordance": "support"}]</answer> 
+

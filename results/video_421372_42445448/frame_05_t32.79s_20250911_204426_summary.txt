@@ -1,0 +1,33 @@
+AFFORDANCE-R1 INFERENCE RESULTS
+==================================================
+
+Image: frame_05_t32.79s.png
+Question: What actions can be performed with objects in this image?
+Processing Time: 5.16 seconds
+Predictions Found: 1
+
+THINKING PROCESS:
+--------------------
+The image shows a part of a couch and a table. The couch has a cushioned and a leg
+
+RETHINKING PROCESS:
+--------------------
+The couch cushion and the table leg
+
+PREDICTIONS:
+--------------------
+Prediction 1:
+  Bounding Box: [935, 1092, 1040, 1178]
+  Center Point: [969, 1133]
+
+RAW MODEL OUTPUT:
+--------------------
+<think>
+The image shows a part of a couch and a table. The couch has a cushioned and a leg
+</think> 
+
+<rethink>
+The couch cushion and the table leg
+</rethink> 
+
+<answer>[{"bbox_2d": [409,637,455,687], "point_2d": [424,661}, {"bbox_2d": [0,105,105,427], "point_2d": [56,185}}, {"affordance": "sit"}]</answer>
