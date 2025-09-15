@@ -39,102 +39,92 @@ def parse_args():
     parser.add_argument("--output_dir", type=str, 
                        default="/home/jtu9/reasoning/Affordance-R1-inference/results",
                        help="Directory to save results")
-    parser.add_argument("--gpu_id", type=str, default="0",
+    parser.add_argument("--gpu_id", type=str, default="7",
                        help="GPU ID to use")
     return parser.parse_args()
+
 
 
 def extract_bbox_points_think(output_text, x_factor, y_factor):
     """Extract bounding boxes, points, and reasoning from model output"""
     pred_bboxes = []
     pred_points = []
-    
-    # Extract JSON from <answer> tags - handle both patterns
+
+    # Extract JSON from <answer> tags
     json_match = re.search(r'<answer>\s*(.*?)\s*</answer>', output_text, re.DOTALL)
-    if not json_match:
-        json_match = re.search(r'answer>\s*(.*?)\s*</answer>', output_text, re.DOTALL)
-    
     if json_match:
         try:
-            json_str = json_match.group(1)
-            # Handle the specific malformed output pattern from Affordance-R1
-            # Input: [{"bbox_2d": [322,322,760,534], "point_2d": [514,424}, {"affordance": "sit"}]
-            # Expected: [{"bbox_2d": [322,322,760,534], "point_2d": [514,424], "affordance": "sit"}]
-            
-            # Check for split pattern BEFORE any modifications
-            has_split_pattern = ('}, {"affordance":' in json_str) or ('}, {\"affordance\":' in json_str)
-            
-            if has_split_pattern:
-                # Extract components using regex - handle both bracket styles  
-                bbox_match = re.search(r'"bbox_2d":\s*\[([^\]]+)\]', json_str)
-                # More precise point regex - look for numbers and comma only
-                point_match = re.search(r'"point_2d":\s*\[(\d+,\d+)\]', json_str) or re.search(r'"point_2d":\s*\[(\d+,\d+)\}', json_str)
-                affordance_match = re.search(r'"affordance":\s*"([^"]+)"', json_str)
-                
-                if bbox_match and point_match:
-                    bbox_vals = bbox_match.group(1)
-                    point_vals = point_match.group(1)
-                    affordance_val = affordance_match.group(1) if affordance_match else ""
-                    
-                    # Reconstruct as valid JSON
-                    if affordance_val:
-                        json_str = f'[{{"bbox_2d": [{bbox_vals}], "point_2d": [{point_vals}], "affordance": "{affordance_val}"}}]'
-                    else:
-                        json_str = f'[{{"bbox_2d": [{bbox_vals}], "point_2d": [{point_vals}]}}]'
-            else:
-                # Apply bracket fix for normal patterns
-                json_str = re.sub(r'(\d+)}', r'\1]', json_str)
-            
-            # Other general fixes
-            json_str = json_str.replace('\\"', '"').strip()
-            
-            # Fix truncated affordance patterns like "aff:grasp" -> "affordance":"grasp"
-            json_str = re.sub(r'"aff:([^"]+)"', r'"affordance":"\1"', json_str)
-            
+            json_str = json_match.group(1).strip()
+
+            # Fix common malformed JSON patterns from Affordance-R1 model
+            # Pattern 1: Fix malformed nested arrays like [ [3,3,689,556] should be [3,3,689,556]
+            json_str = re.sub(r'"bbox_2d":\s*\[\s*\[([^\]]+)\]', r'"bbox_2d": [\1]', json_str)
+
+            # Pattern 2: Fix malformed point_2d arrays with wrong brackets
+            # "point_2d": [134,139}, should be "point_2d": [134,139]}
+            json_str = re.sub(r'"point_2d":\s*\[(\d+,\d+)}', r'"point_2d": [\1]}', json_str)
+
+            # Pattern 3: Fix the severely malformed JSON structure
+            # Original: [{"bbox_2d": [ [3,3,689,556], "point_2d": [125,424], "affbox_2d": [3,527,646,839],,point_2d": [75,656]}], "afffordance": [open"]
+
+            # Step 3a: Remove invalid fields
+            json_str = re.sub(r'"aff?box_2d":\s*\[[^\]]+\]', '', json_str)  # Remove affbox_2d
+            json_str = re.sub(r'"aff?fordance":\s*\[[^\]]+\]', '', json_str)  # Remove malformed affordance
+
+            # Step 3b: Fix malformed point_2d duplicates like ,,point_2d": [75,656]}
+            json_str = re.sub(r',,?\s*point_2d["\s]*:\s*\[[^\]]+\]', '', json_str)
+
+            # Step 3c: Fix double commas and trailing commas
+            json_str = re.sub(r',,+', ',', json_str)  # Fix double commas
+            json_str = re.sub(r',\s*}', '}', json_str)  # Fix trailing commas
+            json_str = re.sub(r',\s*]', ']', json_str)  # Fix trailing commas before ]
+
+            # Pattern 4: Fix final malformed structure like "}], "
+            json_str = re.sub(r'}\],\s*$', '}]', json_str)  # Remove trailing comma after array
+            json_str = re.sub(r'}\]\],\s*$', '}]', json_str)  # Fix double closing brackets with comma
+
+
+            # Pattern 5: Fix malformed quotes
+            json_str = json_str.replace('\\"', '"')
+
+            # Parse the fixed JSON
             data = json.loads(json_str)
-            
+
             # Handle both single dict and list of dicts
             if isinstance(data, dict):
                 data = [data]
-                
+
+            # Extract bounding boxes with coordinate scaling
             pred_bboxes = [[
                 int(item['bbox_2d'][0] * x_factor + 0.5),
                 int(item['bbox_2d'][1] * y_factor + 0.5),
                 int(item['bbox_2d'][2] * x_factor + 0.5),
                 int(item['bbox_2d'][3] * y_factor + 0.5)
-            ] for item in data if 'bbox_2d' in item]
-            
+            ] for item in data if 'bbox_2d' in item and len(item['bbox_2d']) == 4]
+
+            # Extract points with coordinate scaling
             pred_points = [[
                 int(item['point_2d'][0] * x_factor + 0.5),
                 int(item['point_2d'][1] * y_factor + 0.5)
-            ] for item in data if 'point_2d' in item]
-            
-        except (json.JSONDecodeError, KeyError) as e:
+            ] for item in data if 'point_2d' in item and len(item['point_2d']) == 2]
+
+        except (json.JSONDecodeError, KeyError, ValueError) as e:
             print(f"JSON parsing error: {e}")
             print(f"Raw JSON: {json_match.group(1)}")
             pred_bboxes = []
             pred_points = []
-    
-    # Extract thinking processes
+
+    # Extract thinking process
     think_pattern = r'<think>(.*?)</think>'
     think_match = re.search(think_pattern, output_text, re.DOTALL)
     think_text = think_match.group(1).strip() if think_match else ""
-    
-    # Handle both <rethink> tags and bare "rethink" text
+
+    # Extract rethinking process
     rethink_pattern = r'<rethink>(.*?)</rethink>'
     rethink_match = re.search(rethink_pattern, output_text, re.DOTALL)
-    if rethink_match:
-        rethink_text = rethink_match.group(1).strip()
-    else:
-        # Look for bare "rethink" text pattern
-        bare_rethink = re.search(r'</think>\s*\n\s*rethink\s*\n(.*?)\n\s*</rethink>', output_text, re.DOTALL)
-        if bare_rethink:
-            rethink_text = bare_rethink.group(1).strip()
-        else:
-            rethink_text = ""
+    rethink_text = rethink_match.group(1).strip() if rethink_match else ""
 
     return pred_bboxes, pred_points, think_text, rethink_text
-
 
 def create_visualization(image, mask_all, bboxes, points, output_path):
     """Create visualization with original image and predicted mask"""
@@ -305,17 +295,7 @@ def main():
     # Generate response
     print("Generating reasoning...")
     with torch.no_grad():
-        generated_ids = reasoning_model.generate(
-            **inputs, 
-            use_cache=True, 
-            max_new_tokens=3072,  # Further increased to ensure complete outputs
-            do_sample=False,
-            temperature=1.0,
-            pad_token_id=processor.tokenizer.eos_token_id if hasattr(processor.tokenizer, 'eos_token_id') else processor.tokenizer.pad_token_id,
-            repetition_penalty=1.1,
-            length_penalty=1.0,
-            early_stopping=False  # Don't stop early, let it complete the full response
-        )
+        generated_ids = reasoning_model.generate(**inputs, use_cache=True, max_new_tokens=1024, do_sample=False)
     
     generated_ids_trimmed = [
         out_ids[len(in_ids):] for in_ids, out_ids in zip(inputs.input_ids, generated_ids)

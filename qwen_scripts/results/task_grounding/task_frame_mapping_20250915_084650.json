@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "timestamp": "2025-09-15T08:46:50.980737",
+    "video_path": "/shared/BIOE486/SP25/users/ukd1/misc/testset_samples/421372/42445448/42445448.mp4",
+    "video_info": {
+      "path": "/shared/BIOE486/SP25/users/ukd1/misc/testset_samples/421372/42445448/42445448.mp4",
+      "total_frames": 7383,
+      "fps": 60.02,
+      "width": 1920,
+      "height": 1440,
+      "codec": 875967080,
+      "file_size": 201558983,
+      "duration_seconds": 123.00899700099966,
+      "duration_formatted": "2:03.01"
+    },
+    "model_path": "/home/jtu9/reasoning/models/Qwen2.5-VL-7B-Instruct",
+    "total_tasks": 11,
+    "successfully_mapped": 3,
+    "frames_extracted": 3
+  },
+  "task_mappings": {
+    "cabinet_top_left": {
+      "task_id": "cabinet_top_left",
+      "description": "Open the top left cabinet door",
+      "timestamp_seconds": 45.0,
+      "timestamp_formatted": "0:45.00",
+      "confidence_score": 2.5,
+      "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/task_grounding/task_frames/cabinet_operations/cabinet_top_left_t45.00s.png",
+      "context_preview": "### Task Analysis:\n\n#### 1. **Cabinet Operations**\n   - **Objective:** Open the top left cabinet door.\n   - **Optimal Timestamp:** 45.0 seconds\n   - **Reasoning:** At this timestamp, the cabinet doors..."
+    },
+    "tv_remote_footrest": {
+      "task_id": "tv_remote_footrest",
+      "description": "Turn on the TV using one of the remote controls on the footrest",
+      "timestamp_seconds": 38.0,
+      "timestamp_formatted": "0:38.00",
+      "confidence_score": 2.0,
+      "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/task_grounding/task_frames/tv_controls/tv_remote_footrest_t38.00s.png",
+      "context_preview": "structions.\n\n#### 2. **TV Controls**\n   - **Objective:** Turn on the TV using one of the remote controls on the footrest.\n   - **Optimal Timestamp:** 38.0 seconds\n   - **Reasoning:** Around 38.0 secon..."
+    },
+    "power_outlet": {
+      "task_id": "power_outlet",
+      "description": "Plug the device in one of the power outlets next to the cabinet",
+      "timestamp_seconds": 45.0,
+      "timestamp_formatted": "0:45.00",
+      "confidence_score": 2.5,
+      "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/task_grounding/task_frames/other_actions/power_outlet_t45.00s.png",
+      "context_preview": "ures that the power outlet is clearly visible and accessible for plugging in the device.\n\n### Detailed Breakdown of Frames:\n\n1. **Cabinet Operations (45.0 seconds):**\n   - The cabinet doors are open, ..."
+    }
+  },
+  "summary_by_category": {
+    "Cabinet Operations": [
+      {
+        "task_id": "cabinet_top_left",
+        "description": "Open the top left cabinet door",
+        "timestamp_seconds": 45.0,
+        "timestamp_formatted": "0:45.00",
+        "confidence_score": 2.5,
+        "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/task_grounding/task_frames/cabinet_operations/cabinet_top_left_t45.00s.png",
+        "context_preview": "### Task Analysis:\n\n#### 1. **Cabinet Operations**\n   - **Objective:** Open the top left cabinet door.\n   - **Optimal Timestamp:** 45.0 seconds\n   - **Reasoning:** At this timestamp, the cabinet doors..."
+      }
+    ],
+    "TV Controls": [
+      {
+        "task_id": "tv_remote_footrest",
+        "description": "Turn on the TV using one of the remote controls on the footrest",
+        "timestamp_seconds": 38.0,
+        "timestamp_formatted": "0:38.00",
+        "confidence_score": 2.0,
+        "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/task_grounding/task_frames/tv_controls/tv_remote_footrest_t38.00s.png",
+        "context_preview": "structions.\n\n#### 2. **TV Controls**\n   - **Objective:** Turn on the TV using one of the remote controls on the footrest.\n   - **Optimal Timestamp:** 38.0 seconds\n   - **Reasoning:** Around 38.0 secon..."
+      }
+    ],
+    "Other Actions": [
+      {
+        "task_id": "power_outlet",
+        "description": "Plug the device in one of the power outlets next to the cabinet",
+        "timestamp_seconds": 45.0,
+        "timestamp_formatted": "0:45.00",
+        "confidence_score": 2.5,
+        "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/task_grounding/task_frames/other_actions/power_outlet_t45.00s.png",
+        "context_preview": "ures that the power outlet is clearly visible and accessible for plugging in the device.\n\n### Detailed Breakdown of Frames:\n\n1. **Cabinet Operations (45.0 seconds):**\n   - The cabinet doors are open, ..."
+      }
+    ]
+  },
+  "frame_paths": {
+    "cabinet_top_left": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/task_grounding/task_frames/cabinet_operations/cabinet_top_left_t45.00s.png",
+    "tv_remote_footrest": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/task_grounding/task_frames/tv_controls/tv_remote_footrest_t38.00s.png",
+    "power_outlet": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/task_grounding/task_frames/other_actions/power_outlet_t45.00s.png"
+  }
+}

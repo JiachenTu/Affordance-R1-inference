@@ -1,0 +1,31 @@
+AFFORDANCE-R1 INFERENCE RESULTS
+==================================================
+
+Image: frame_118_t113.30s.png
+Question: What actions can be performed with objects in this image?
+Processing Time: 6.44 seconds
+Predictions Found: 0
+
+THINKING PROCESS:
+--------------------
+
+
+RETHINKING PROCESS:
+--------------------
+The bookshelf has glass doors, which suggests
+<rethink>
+The bookshelf has glass doors, which
+
+PREDICTIONS:
+--------------------
+RAW MODEL OUTPUT:
+--------------------
+<think>
+The image shows a bookshelf with various objects placed on its.bookshelves. The objects include books, a white box, and some papers.bookshelves. The functional properties of the bookshelf include storage and display purposes.bookshelves. The objects on the shelves canbookshelves. can can
+<rethink>
+The bookshelf has glass doors, which suggests
+<rethink>
+The bookshelf has glass doors, which
+</rethink> 
+
+<answer>[{"bbox_2d": [ [3,3,689,556], "point_2d": [125,424], "affbox_2d":  [3,527,646,839],,point_2d":  [75,656]}], "afffordance":  [open"]</answer>

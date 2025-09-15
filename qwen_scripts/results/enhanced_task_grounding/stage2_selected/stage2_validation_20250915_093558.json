@@ -1,0 +1,299 @@
+{
+  "validation_timestamp": "2025-09-15T09:35:58.674920",
+  "model_path": "/home/jtu9/reasoning/models/Qwen2.5-VL-7B-Instruct",
+  "gpu_id": "5",
+  "validation_results": {
+    "cabinet_top_left": [
+      {
+        "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/enhanced_task_grounding/stage1_candidates/cabinet_operations/cabinet_top_left_candidate_025_t111.86s_q0.658.png",
+        "task_id": "cabinet_top_left",
+        "score": 7.0,
+        "explanation": "The image provides a clear view of the cabinet and its components, including the top left cabinet door, which is identifiable by its position and design. The handles/knobs are also visible, making it possible to interact with them if one were to open the door. The angle is suitable for opening the door, and there is adequate lighting on the cabinet area.",
+        "visible_objects": "- Top left cabinet door",
+        "issues": "- The image does not show the interior of the cabinet fully, so it's unclear what might be inside.",
+        "raw_response": "Score: 7\nExplanation: The image provides a clear view of the cabinet and its components, including the top left cabinet door, which is identifiable by its position and design. The handles/knobs are also visible, making it possible to interact with them if one were to open the door. The angle is suitable for opening the door, and there is adequate lighting on the cabinet area.\n\nVisible Objects:\n- Top left cabinet door\n- Handles/knobs\n- Books inside the cabinet\n- Woven baskets in the bottom shelf\n- Purple slippers outside the cabinet\n- Electrical outlet on the wall\n\nIssues:\n- The image does not show the interior of the cabinet fully, so it's unclear what might be inside.\n- There is no indication of whether the cabinet has a lock mechanism, which would affect the ease of opening the door without permission.",
+        "validation_timestamp": "2025-09-15T09:19:45.394582",
+        "selected_frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/enhanced_task_grounding/stage2_selected/cabinet_operations/cabinet_top_left_selected_1_score7.0.png",
+        "selection_rank": 1
+      },
+      {
+        "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/enhanced_task_grounding/stage1_candidates/cabinet_operations/cabinet_top_left_candidate_026_t115.86s_q0.628.png",
+        "task_id": "cabinet_top_left",
+        "score": 7.0,
+        "explanation": "The image provides a clear view of the cabinet and its contents, with the top left cabinet door being identifiable. However, there's no visible handle or knob to interact with directly in the image.",
+        "visible_objects": "- Cabinet doors",
+        "issues": "While the cabinet doors are visible, there are no visible handles or knobs that can be used to open them. The image does not show any direct means of interaction with the cabinet.",
+        "raw_response": "Score: 7\nExplanation: The image provides a clear view of the cabinet and its contents, with the top left cabinet door being identifiable. However, there's no visible handle or knob to interact with directly in the image.\nVisible Objects: \n- Cabinet doors\n- Books\n- Folders\n- Handle/door mechanism (implied by the glass panels)\n\nIssues: While the cabinet doors are visible, there are no visible handles or knobs that can be used to open them. The image does not show any direct means of interaction with the cabinet.",
+        "validation_timestamp": "2025-09-15T09:20:24.043047",
+        "selected_frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/enhanced_task_grounding/stage2_selected/cabinet_operations/cabinet_top_left_selected_2_score7.0.png",
+        "selection_rank": 2
+      }
+    ],
+    "cabinet_top_right": [
+      {
+        "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/enhanced_task_grounding/stage1_candidates/cabinet_operations/cabinet_top_right_candidate_022_t93.41s_q0.673.png",
+        "task_id": "cabinet_top_right",
+        "score": 7.0,
+        "explanation": "The image provides a clear view of the cabinet and its door, with adequate lighting to identify the cabinet's features. However, the angle is slightly off-center, which might make it a bit challenging to interact with the door directly.",
+        "visible_objects": "- Top right cabinet door",
+        "issues": "- The angle is not perfectly centered on the cabinet door, making it slightly harder to focus on interacting with it.",
+        "raw_response": "Score: 7\nExplanation: The image provides a clear view of the cabinet and its door, with adequate lighting to identify the cabinet's features. However, the angle is slightly off-center, which might make it a bit challenging to interact with the door directly.\nVisible Objects: \n- Top right cabinet door\n- Handle on the cabinet door\n- Items inside the cabinet (boxes, baskets)\n\nIssues: \n- The angle is not perfectly centered on the cabinet door, making it slightly harder to focus on interacting with it.\n- There is no direct indication of whether the door can be opened or if there are any obstacles preventing access.\n\n",
+        "validation_timestamp": "2025-09-15T09:20:54.024818",
+        "selected_frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/enhanced_task_grounding/stage2_selected/cabinet_operations/cabinet_top_right_selected_1_score7.0.png",
+        "selection_rank": 1
+      },
+      {
+        "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/enhanced_task_grounding/stage1_candidates/cabinet_operations/cabinet_top_right_candidate_025_t111.86s_q0.658.png",
+        "task_id": "cabinet_top_right",
+        "score": 7.0,
+        "explanation": "The image provides a clear view of the cabinet and its components, including the top right cabinet door which is identifiable by its glass panel. The handles/knobs are also visible, and there's an adequate angle for interacting with the cabinet. However, the lighting appears to be slightly dim, which might make it harder to see details in low light.",
+        "visible_objects": "- Top right cabinet door with glass panels",
+        "issues": "- Slightly dim lighting may affect clarity when trying to open the cabinet door in real-life conditions.",
+        "raw_response": "Score: 7\nExplanation: The image provides a clear view of the cabinet and its components, including the top right cabinet door which is identifiable by its glass panel. The handles/knobs are also visible, and there's an adequate angle for interacting with the cabinet. However, the lighting appears to be slightly dim, which might make it harder to see details in low light.\nVisible Objects: \n- Top right cabinet door with glass panels\n- Handles/knobs attached to the cabinet doors\n- Books inside the cabinet shelves\n- Woven baskets at the bottom shelf\n- Purple slippers and blankets partially visible outside the cabinet\nIssues: \n- Slightly dim lighting may affect clarity when trying to open the cabinet door in real-life conditions.",
+        "validation_timestamp": "2025-09-15T09:21:18.428196",
+        "selected_frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/enhanced_task_grounding/stage2_selected/cabinet_operations/cabinet_top_right_selected_2_score7.0.png",
+        "selection_rank": 2
+      }
+    ],
+    "cabinet_bottom_left": [
+      {
+        "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/enhanced_task_grounding/stage1_candidates/cabinet_operations/cabinet_bottom_left_candidate_025_t111.86s_q0.658.png",
+        "task_id": "cabinet_bottom_left",
+        "score": 7.0,
+        "explanation": "The image provides a clear view of the cabinet and its components, including the bottom left cabinet door which appears to be openable. The handles are visible, and there's adequate lighting. However, the angle isn't perfect for interacting with the cabinet directly.",
+        "visible_objects": "- Bottom left cabinet door",
+        "issues": "While most elements are visible, the angle makes it slightly challenging to interact with the cabinet door directly. The presence of books and other items might also make it difficult to open the door fully without careful handling.",
+        "raw_response": "Score: 7\nExplanation: The image provides a clear view of the cabinet and its components, including the bottom left cabinet door which appears to be openable. The handles are visible, and there's adequate lighting. However, the angle isn't perfect for interacting with the cabinet directly.\nVisible Objects: \n- Bottom left cabinet door\n- Handles/knobs\n- Books in upper shelves\n- Storage box in middle shelf\n- Wicker basket at the bottom\nIssues: While most elements are visible, the angle makes it slightly challenging to interact with the cabinet door directly. The presence of books and other items might also make it difficult to open the door fully without careful handling.",
+        "validation_timestamp": "2025-09-15T09:22:52.929915",
+        "selected_frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/enhanced_task_grounding/stage2_selected/cabinet_operations/cabinet_bottom_left_selected_1_score7.0.png",
+        "selection_rank": 1
+      },
+      {
+        "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/enhanced_task_grounding/stage1_candidates/cabinet_operations/cabinet_bottom_left_candidate_026_t115.86s_q0.628.png",
+        "task_id": "cabinet_bottom_left",
+        "score": 7.0,
+        "explanation": "The image provides a clear view of the cabinet and its contents, with the bottom left cabinet door being identifiable. However, there's no visible handle or knob to interact with directly in the image.",
+        "visible_objects": "- Cabinet doors",
+        "issues": "While the cabinet doors are visible, there are no visible handles or knobs that can be used to open them. The angle is somewhat obstructed by reflections and shadows, which slightly hinder the clarity of the cabinet's details.",
+        "raw_response": "Score: 7\nExplanation: The image provides a clear view of the cabinet and its contents, with the bottom left cabinet door being identifiable. However, there's no visible handle or knob to interact with directly in the image.\nVisible Objects: \n- Cabinet doors\n- Books\n- Folders\n- Handle/door knobs\nIssues: While the cabinet doors are visible, there are no visible handles or knobs that can be used to open them. The angle is somewhat obstructed by reflections and shadows, which slightly hinder the clarity of the cabinet's details.",
+        "validation_timestamp": "2025-09-15T09:23:32.237723",
+        "selected_frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/enhanced_task_grounding/stage2_selected/cabinet_operations/cabinet_bottom_left_selected_2_score7.0.png",
+        "selection_rank": 2
+      }
+    ],
+    "cabinet_bottom_right": [
+      {
+        "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/enhanced_task_grounding/stage1_candidates/cabinet_operations/cabinet_bottom_right_candidate_022_t93.41s_q0.673.png",
+        "task_id": "cabinet_bottom_right",
+        "score": 7.0,
+        "explanation": "The image provides a clear view of the cabinet and its doors, with adequate lighting to identify the cabinet's features. However, the angle is slightly off-center, which might make it less convenient for interacting directly with the cabinet.",
+        "visible_objects": "- Bottom right cabinet door",
+        "issues": "The angle is slightly off-center, making it less than ideal for direct interaction with the cabinet. Additionally, while the cabinet doors are visible, there is no indication if they can be opened due to the image perspective.",
+        "raw_response": "Score: 7\nExplanation: The image provides a clear view of the cabinet and its doors, with adequate lighting to identify the cabinet's features. However, the angle is slightly off-center, which might make it less convenient for interacting directly with the cabinet.\nVisible Objects: \n- Bottom right cabinet door\n- Handle on the bottom right cabinet door\n- Top left cabinet door\n- Handle on the top left cabinet door\n- Storage baskets inside the cabinet\n- Purple towels on the floor\nIssues: The angle is slightly off-center, making it less than ideal for direct interaction with the cabinet. Additionally, while the cabinet doors are visible, there is no indication if they can be opened due to the image perspective.",
+        "validation_timestamp": "2025-09-15T09:24:02.616841",
+        "selected_frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/enhanced_task_grounding/stage2_selected/cabinet_operations/cabinet_bottom_right_selected_1_score7.0.png",
+        "selection_rank": 1
+      },
+      {
+        "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/enhanced_task_grounding/stage1_candidates/cabinet_operations/cabinet_bottom_right_candidate_025_t111.86s_q0.658.png",
+        "task_id": "cabinet_bottom_right",
+        "score": 7.0,
+        "explanation": "The image provides a clear view of the cabinet and its components, including the bottom right cabinet door which appears to be the target for opening. The handles/knobs are visible, and there's adequate lighting on the cabinet area. However, the angle isn't perfect for interacting with the cabinet directly; it would require more focus on the lower section.",
+        "visible_objects": "- Bottom right cabinet door",
+        "issues": "The angle might make it slightly challenging to open the cabinet door directly without further adjustment.",
+        "raw_response": "Score: 7\nExplanation: The image provides a clear view of the cabinet and its components, including the bottom right cabinet door which appears to be the target for opening. The handles/knobs are visible, and there's adequate lighting on the cabinet area. However, the angle isn't perfect for interacting with the cabinet directly; it would require more focus on the lower section.\nVisible Objects: \n- Bottom right cabinet door\n- Handles/knobs\n- Books in upper shelves\n- Storage box in middle shelf\n- Wicker basket at the bottom\nIssues: The angle might make it slightly challenging to open the cabinet door directly without further adjustment.",
+        "validation_timestamp": "2025-09-15T09:24:26.198961",
+        "selected_frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/enhanced_task_grounding/stage2_selected/cabinet_operations/cabinet_bottom_right_selected_2_score7.0.png",
+        "selection_rank": 2
+      }
+    ],
+    "tv_remote_footrest": [
+      {
+        "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/enhanced_task_grounding/stage1_candidates/tv_controls/tv_remote_footrest_candidate_018_t64.50s_q0.654.png",
+        "task_id": "tv_remote_footrest",
+        "score": 7.0,
+        "explanation": "The image provides clear visibility of the footrest and the remote control placed on top of it. However, the TV itself is not directly visible in the frame, which slightly reduces its rating.",
+        "visible_objects": "- Footrest/ottoman",
+        "issues": "- The TV is partially obscured by the ottoman, making it difficult to see if there's a direct line of sight to turn it on with the remote.",
+        "raw_response": "Score: 7\nExplanation: The image provides clear visibility of the footrest and the remote control placed on top of it. However, the TV itself is not directly visible in the frame, which slightly reduces its rating.\nVisible Objects: \n- Footrest/ottoman\n- Remote control\n- Television (partially visible behind the ottoman)\n\nIssues: \n- The TV is partially obscured by the ottoman, making it difficult to see if there's a direct line of sight to turn it on with the remote.\n- The lighting appears adequate for identifying the remote control, but the overall room lighting might not be sufficient to ensure clarity when trying to use the remote.\n\n",
+        "validation_timestamp": "2025-09-15T09:26:09.805060",
+        "selected_frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/enhanced_task_grounding/stage2_selected/tv_controls/tv_remote_footrest_selected_1_score7.0.png",
+        "selection_rank": 1
+      },
+      {
+        "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/enhanced_task_grounding/stage1_candidates/tv_controls/tv_remote_footrest_candidate_014_t46.05s_q0.661.png",
+        "task_id": "tv_remote_footrest",
+        "score": 6.0,
+        "explanation": "The image shows most of the necessary elements to perform the task, including a footrest with a remote control and an ottoman. However, there's no clear view of the TV, which makes it difficult to determine if the remote can actually turn it on.",
+        "visible_objects": "Footrest/ottoman, remote control, ottoman",
+        "issues": "Lack of visibility of the TV, which is crucial for determining whether the remote will work effectively.",
+        "raw_response": "Score: 6\nExplanation: The image shows most of the necessary elements to perform the task, including a footrest with a remote control and an ottoman. However, there's no clear view of the TV, which makes it difficult to determine if the remote can actually turn it on.\nVisible Objects: Footrest/ottoman, remote control, ottoman\nIssues: Lack of visibility of the TV, which is crucial for determining whether the remote will work effectively.",
+        "validation_timestamp": "2025-09-15T09:25:51.912579",
+        "selected_frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/enhanced_task_grounding/stage2_selected/tv_controls/tv_remote_footrest_selected_2_score6.0.png",
+        "selection_rank": 2
+      }
+    ],
+    "tv_remote_table": [
+      {
+        "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/enhanced_task_grounding/stage1_candidates/tv_controls/tv_remote_table_candidate_018_t64.50s_q0.654.png",
+        "task_id": "tv_remote_table",
+        "score": 7.0,
+        "explanation": "The image shows all necessary elements to perform the task\u2014there's a clear view of the small glass table with the remote control and the TV is partially visible. However, the TV itself isn't fully in the frame, which slightly reduces its rating.",
+        "visible_objects": "- Small glass table",
+        "issues": "- The TV is only partially visible, making it harder to identify if it\u2019s the correct one to turn on.",
+        "raw_response": "Score: 7\nExplanation: The image shows all necessary elements to perform the task\u2014there's a clear view of the small glass table with the remote control and the TV is partially visible. However, the TV itself isn't fully in the frame, which slightly reduces its rating.\nVisible Objects: \n- Small glass table\n- Remote control\n- Television (partially visible)\n\nIssues: \n- The TV is only partially visible, making it harder to identify if it\u2019s the correct one to turn on.\n- The table surface appears cluttered, though this doesn\u2019t directly impact the task at hand.\n\nThe room setup seems suitable for turning on the TV using the remote control, despite some minor visual limitations.",
+        "validation_timestamp": "2025-09-15T09:27:41.629675",
+        "selected_frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/enhanced_task_grounding/stage2_selected/tv_controls/tv_remote_table_selected_1_score7.0.png",
+        "selection_rank": 1
+      },
+      {
+        "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/enhanced_task_grounding/stage1_candidates/tv_controls/tv_remote_table_candidate_019_t74.96s_q0.619.png",
+        "task_id": "tv_remote_table",
+        "score": 7.0,
+        "explanation": "The image provides clear visibility of all necessary elements to perform the task\u2014small glass table, remote control, and TV. However, there's some slight obstruction by the lamp shade which might slightly hinder the view.",
+        "visible_objects": "- Small glass table",
+        "issues": "The lamp shade partially obstructs the view of the TV screen, making it less than perfect for the task. Additionally, while the remote control is present, its exact position relative to the TV isn't entirely clear due to the angle.",
+        "raw_response": "Score: 7\nExplanation: The image provides clear visibility of all necessary elements to perform the task\u2014small glass table, remote control, and TV. However, there's some slight obstruction by the lamp shade which might slightly hinder the view.\nVisible Objects: \n- Small glass table\n- Remote control\n- TV\n- Lamp with shade\n- Glass heart-shaped decorations\nIssues: The lamp shade partially obstructs the view of the TV screen, making it less than perfect for the task. Additionally, while the remote control is present, its exact position relative to the TV isn't entirely clear due to the angle.",
+        "validation_timestamp": "2025-09-15T09:28:16.433581",
+        "selected_frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/enhanced_task_grounding/stage2_selected/tv_controls/tv_remote_table_selected_2_score7.0.png",
+        "selection_rank": 2
+      }
+    ],
+    "radiator_thermostat": [
+      {
+        "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/enhanced_task_grounding/stage1_candidates/room_environment/radiator_thermostat_candidate_015_t54.00s_q0.695.png",
+        "task_id": "radiator_thermostat",
+        "score": 6.0,
+        "explanation": "The radiator and part of the window are visible, which helps in identifying where to adjust the thermostat. However, the thermostat itself is not clearly visible, making it difficult to determine if adjustments can be made directly.",
+        "visible_objects": "- Radiator",
+        "issues": "The thermostat is not clearly visible, so it may not be possible to make precise adjustments without further inspection. The angle and lighting do not provide an optimal view of the control area.",
+        "raw_response": "Score: 6\nExplanation: The radiator and part of the window are visible, which helps in identifying where to adjust the thermostat. However, the thermostat itself is not clearly visible, making it difficult to determine if adjustments can be made directly.\nVisible Objects: \n- Radiator\n- Part of the window\nIssues: The thermostat is not clearly visible, so it may not be possible to make precise adjustments without further inspection. The angle and lighting do not provide an optimal view of the control area.",
+        "validation_timestamp": "2025-09-15T09:28:33.550706",
+        "selected_frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/enhanced_task_grounding/stage2_selected/room_environment/radiator_thermostat_selected_1_score6.0.png",
+        "selection_rank": 1
+      },
+      {
+        "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/enhanced_task_grounding/stage1_candidates/room_environment/radiator_thermostat_candidate_018_t64.50s_q0.654.png",
+        "task_id": "radiator_thermostat",
+        "score": 6.0,
+        "explanation": "The radiator and part of the window are visible, which helps in identifying where to adjust the temperature. However, the thermostat itself is not clearly visible due to the angle and lighting.",
+        "visible_objects": "radiator, window, part of the wall",
+        "issues": "The thermostat is not clearly visible; the angle and lighting make it difficult to see details needed to adjust the temperature accurately.",
+        "raw_response": "Score: 6\nExplanation: The radiator and part of the window are visible, which helps in identifying where to adjust the temperature. However, the thermostat itself is not clearly visible due to the angle and lighting.\nVisible Objects: radiator, window, part of the wall\nIssues: The thermostat is not clearly visible; the angle and lighting make it difficult to see details needed to adjust the temperature accurately.",
+        "validation_timestamp": "2025-09-15T09:29:12.235713",
+        "selected_frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/enhanced_task_grounding/stage2_selected/room_environment/radiator_thermostat_selected_2_score6.0.png",
+        "selection_rank": 2
+      }
+    ],
+    "window_above_radiator": [
+      {
+        "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/enhanced_task_grounding/stage1_candidates/room_environment/window_above_radiator_candidate_002_t6.00s_q0.648.png",
+        "task_id": "window_above_radiator",
+        "score": 7.0,
+        "explanation": "The image provides a clear view of the window, its frame, and the radiator below it. However, there's no indication of the window opening mechanism being accessible in this particular shot.",
+        "visible_objects": "- Window",
+        "issues": "While most elements necessary to assess the task are present, the image does not show the window opening mechanism, which would be required to determine if the window can be opened. Additionally, the angle might make it difficult to access the handle if it were present.",
+        "raw_response": "Score: 7\nExplanation: The image provides a clear view of the window, its frame, and the radiator below it. However, there's no indication of the window opening mechanism being accessible in this particular shot.\nVisible Objects: \n- Window\n- Window frame\n- Window handle\n- Radiator\n- Glass\nIssues: While most elements necessary to assess the task are present, the image does not show the window opening mechanism, which would be required to determine if the window can be opened. Additionally, the angle might make it difficult to access the handle if it were present.",
+        "validation_timestamp": "2025-09-15T09:30:49.651218",
+        "selected_frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/enhanced_task_grounding/stage2_selected/room_environment/window_above_radiator_selected_1_score7.0.png",
+        "selection_rank": 1
+      },
+      {
+        "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/enhanced_task_grounding/stage1_candidates/room_environment/window_above_radiator_candidate_018_t64.50s_q0.654.png",
+        "task_id": "window_above_radiator",
+        "score": 6.0,
+        "explanation": "The window is partially visible in the upper right corner of the image, with some parts of the window frame and blinds discernible. However, the window opening mechanism is not directly visible, and there's no clear indication of where to access it. The radiator beneath the window is also visible.",
+        "visible_objects": "window, window frame, blinds, radiator, glass",
+        "issues": "The window opening mechanism is not clearly visible, making it difficult to determine if the window can be opened. Additionally, the angle of the photo does not provide an optimal view of the window area.",
+        "raw_response": "Score: 6\nExplanation: The window is partially visible in the upper right corner of the image, with some parts of the window frame and blinds discernible. However, the window opening mechanism is not directly visible, and there's no clear indication of where to access it. The radiator beneath the window is also visible.\nVisible Objects: window, window frame, blinds, radiator, glass\nIssues: The window opening mechanism is not clearly visible, making it difficult to determine if the window can be opened. Additionally, the angle of the photo does not provide an optimal view of the window area.",
+        "validation_timestamp": "2025-09-15T09:30:38.219854",
+        "selected_frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/enhanced_task_grounding/stage2_selected/room_environment/window_above_radiator_selected_2_score6.0.png",
+        "selection_rank": 2
+      }
+    ],
+    "ceiling_light": [
+      {
+        "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/enhanced_task_grounding/stage1_candidates/room_environment/ceiling_light_candidate_025_t111.86s_q0.658.png",
+        "task_id": "ceiling_light",
+        "score": 6.0,
+        "explanation": "The image shows a light switch and part of a wall socket, which suggests there might be a light control nearby. However, the ceiling light itself is not visible in the image.",
+        "visible_objects": "- Light switch",
+        "issues": "The ceiling light is not visible, making it impossible to determine if the light switch controls the ceiling light directly. Additionally, the angle does not provide a clear view of any lighting fixtures above the shelf.",
+        "raw_response": "Score: 6\nExplanation: The image shows a light switch and part of a wall socket, which suggests there might be a light control nearby. However, the ceiling light itself is not visible in the image.\nVisible Objects: \n- Light switch\n- Wall socket\n- Part of a bookshelf with books and baskets\nIssues: The ceiling light is not visible, making it impossible to determine if the light switch controls the ceiling light directly. Additionally, the angle does not provide a clear view of any lighting fixtures above the shelf.",
+        "validation_timestamp": "2025-09-15T09:32:01.476653",
+        "selected_frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/enhanced_task_grounding/stage2_selected/room_environment/ceiling_light_selected_1_score6.0.png",
+        "selection_rank": 1
+      },
+      {
+        "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/enhanced_task_grounding/stage1_candidates/room_environment/ceiling_light_candidate_002_t6.00s_q0.648.png",
+        "task_id": "ceiling_light",
+        "score": 6.0,
+        "explanation": "The image shows a ceiling light and part of its fixture, which suggests that turning on the light would be possible. However, there is no visible light switch in the frame, making it unclear if the switch is accessible.",
+        "visible_objects": "Ceiling light with fixture, window, lamp, couch, pillows, laptop, LOVE sign, table, remote control, box.",
+        "issues": "The absence of a visible light switch makes it difficult to determine whether the switch is accessible or if the room has any other means of controlling the light.",
+        "raw_response": "Score: 6\nExplanation: The image shows a ceiling light and part of its fixture, which suggests that turning on the light would be possible. However, there is no visible light switch in the frame, making it unclear if the switch is accessible.\nVisible Objects: Ceiling light with fixture, window, lamp, couch, pillows, laptop, LOVE sign, table, remote control, box.\nIssues: The absence of a visible light switch makes it difficult to determine whether the switch is accessible or if the room has any other means of controlling the light.",
+        "validation_timestamp": "2025-09-15T09:32:24.926888",
+        "selected_frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/enhanced_task_grounding/stage2_selected/room_environment/ceiling_light_selected_2_score6.0.png",
+        "selection_rank": 2
+      }
+    ],
+    "door_close": [
+      {
+        "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/enhanced_task_grounding/stage1_candidates/other_actions/door_close_candidate_001_t3.00s_q0.642.png",
+        "task_id": "door_close",
+        "score": 7.0,
+        "explanation": "The image shows a clear view of the door, which is open, and there's an adequate angle for interacting with the door. However, the door handle isn't clearly visible due to the lighting and shadows.",
+        "visible_objects": "- Door",
+        "issues": "The door handle is not clearly visible, making it difficult to determine if the door can be closed directly from this perspective. Additionally, the lighting in the room appears dim, which might make it harder to see details when trying to close the door.",
+        "raw_response": "Score: 7\nExplanation: The image shows a clear view of the door, which is open, and there's an adequate angle for interacting with the door. However, the door handle isn't clearly visible due to the lighting and shadows.\nVisible Objects: \n- Door\n- Door frame\n- Ceiling light\n- Window\n- Wall\nIssues: The door handle is not clearly visible, making it difficult to determine if the door can be closed directly from this perspective. Additionally, the lighting in the room appears dim, which might make it harder to see details when trying to close the door.",
+        "validation_timestamp": "2025-09-15T09:34:02.634914",
+        "selected_frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/enhanced_task_grounding/stage2_selected/other_actions/door_close_selected_1_score7.0.png",
+        "selection_rank": 1
+      },
+      {
+        "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/enhanced_task_grounding/stage1_candidates/other_actions/door_close_candidate_025_t111.86s_q0.658.png",
+        "task_id": "door_close",
+        "score": 6.0,
+        "explanation": "The image shows a cabinet with doors, one of which appears to be open. The door handle is visible, and there is an angle that allows for potential interaction with the door. However, the door itself is partially obscured by other elements in the image.",
+        "visible_objects": "- Cabinet",
+        "issues": "The door is partially hidden behind the cabinet structure, making it less clear whether closing the door would be straightforward. Additionally, the angle might make it difficult to interact with the door if it were to be closed manually due to obstructions.",
+        "raw_response": "Score: 6\nExplanation: The image shows a cabinet with doors, one of which appears to be open. The door handle is visible, and there is an angle that allows for potential interaction with the door. However, the door itself is partially obscured by other elements in the image.\nVisible Objects: \n- Cabinet\n- Open door\n- Closed door\n- Door handle\n- Books on shelves\n- Woven baskets\n- Electrical outlet\nIssues: The door is partially hidden behind the cabinet structure, making it less clear whether closing the door would be straightforward. Additionally, the angle might make it difficult to interact with the door if it were to be closed manually due to obstructions.",
+        "validation_timestamp": "2025-09-15T09:33:34.662091",
+        "selected_frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/enhanced_task_grounding/stage2_selected/other_actions/door_close_selected_2_score6.0.png",
+        "selection_rank": 2
+      }
+    ],
+    "power_outlet": [
+      {
+        "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/enhanced_task_grounding/stage1_candidates/other_actions/power_outlet_candidate_025_t111.86s_q0.658.png",
+        "task_id": "power_outlet",
+        "score": 7.0,
+        "explanation": "The power outlet is clearly visible and accessible, and there is adequate lighting on the outlet area. However, the cabinet is partially obscured by the angle of the photo.",
+        "visible_objects": "- Power outlet/socket",
+        "issues": "The cabinet is partially obstructed due to the angle of the photograph, which might make it slightly harder to plug something into the outlet directly adjacent to the cabinet.",
+        "raw_response": "Score: 7\nExplanation: The power outlet is clearly visible and accessible, and there is adequate lighting on the outlet area. However, the cabinet is partially obscured by the angle of the photo.\nVisible Objects: \n- Power outlet/socket\n- Cabinet with glass doors\n- Books inside the cabinet\n- Woven baskets underneath the cabinet\n- Wall\nIssues: The cabinet is partially obstructed due to the angle of the photograph, which might make it slightly harder to plug something into the outlet directly adjacent to the cabinet.",
+        "validation_timestamp": "2025-09-15T09:35:06.211298",
+        "selected_frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/enhanced_task_grounding/stage2_selected/other_actions/power_outlet_selected_1_score7.0.png",
+        "selection_rank": 1
+      },
+      {
+        "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/enhanced_task_grounding/stage1_candidates/other_actions/power_outlet_candidate_022_t93.41s_q0.673.png",
+        "task_id": "power_outlet",
+        "score": 6.0,
+        "explanation": "The image shows a cabinet and what appears to be a power outlet near it, though the outlet itself is partially obscured by shadows and the angle makes it difficult to confirm its accessibility. There's also some clutter around which might obstruct access.",
+        "visible_objects": "- Cabinet",
+        "issues": "- The outlet is partially hidden by shadows and other objects, making it hard to determine if it\u2019s accessible.",
+        "raw_response": "Score: 6\nExplanation: The image shows a cabinet and what appears to be a power outlet near it, though the outlet itself is partially obscured by shadows and the angle makes it difficult to confirm its accessibility. There's also some clutter around which might obstruct access.\nVisible Objects: \n- Cabinet\n- Wall outlet (partially visible)\n- Cluttered desk with various items including figurines\nIssues: \n- The outlet is partially hidden by shadows and other objects, making it hard to determine if it\u2019s accessible.\n- The angle of the photo doesn't fully reveal the outlet, which may make it challenging to plug something in without further inspection.\n\n",
+        "validation_timestamp": "2025-09-15T09:34:43.978754",
+        "selected_frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/enhanced_task_grounding/stage2_selected/other_actions/power_outlet_selected_2_score6.0.png",
+        "selection_rank": 2
+      }
+    ]
+  },
+  "summary": {
+    "total_tasks": 11,
+    "tasks_with_selections": 11,
+    "total_selected_frames": 22,
+    "average_score": 6.636363636363637
+  }
+}

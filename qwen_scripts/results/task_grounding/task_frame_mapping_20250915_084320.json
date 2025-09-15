@@ -1,0 +1,244 @@
+{
+  "metadata": {
+    "timestamp": "2025-09-15T08:43:20.026298",
+    "video_path": "/shared/BIOE486/SP25/users/ukd1/misc/testset_samples/421372/42445448/42445448.mp4",
+    "video_info": {
+      "path": "/shared/BIOE486/SP25/users/ukd1/misc/testset_samples/421372/42445448/42445448.mp4",
+      "total_frames": 7383,
+      "fps": 60.02,
+      "width": 1920,
+      "height": 1440,
+      "codec": 875967080,
+      "file_size": 201558983,
+      "duration_seconds": 123.00899700099966,
+      "duration_formatted": "2:03.01"
+    },
+    "model_path": "/home/jtu9/reasoning/models/Qwen2.5-VL-7B-Instruct",
+    "total_tasks": 11,
+    "successfully_mapped": 11,
+    "frames_extracted": 11
+  },
+  "task_mappings": {
+    "cabinet_top_left": {
+      "task_id": "cabinet_top_left",
+      "description": "Open the top left cabinet door",
+      "timestamp_seconds": 45.0,
+      "timestamp_formatted": "0:45.00",
+      "confidence_score": 2.5,
+      "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/task_grounding/task_frames/cabinet_operations/cabinet_top_left_t45.00s.png",
+      "context_preview": "### Task Analysis:\n\n#### 1. **Cabinet Operations**\n   - **Open the top left cabinet door**: \n     - **Timestamp:** 45.0 seconds\n     - **Reasoning:** At this point, the cabinet doors are fully visible..."
+    },
+    "cabinet_top_right": {
+      "task_id": "cabinet_top_right",
+      "description": "Open the top right cabinet door",
+      "timestamp_seconds": 45.0,
+      "timestamp_formatted": "0:45.00",
+      "confidence_score": 2.5,
+      "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/task_grounding/task_frames/cabinet_operations/cabinet_top_right_t45.00s.png",
+      "context_preview": "### Task Analysis:\n\n#### 1. **Cabinet Operations**\n   - **Open the top left cabinet door**: \n     - **Timestamp:** 45.0 seconds\n     - **Reasoning:** At this point, the cabinet doors are fully visible..."
+    },
+    "cabinet_bottom_left": {
+      "task_id": "cabinet_bottom_left",
+      "description": "Open the bottom left cabinet door",
+      "timestamp_seconds": 46.0,
+      "timestamp_formatted": "0:46.00",
+      "confidence_score": 2.5,
+      "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/task_grounding/task_frames/cabinet_operations/cabinet_bottom_left_t46.00s.png",
+      "context_preview": "t this point, the cabinet doors are fully visible, allowing easy access to open them.\n   - **Open the top right cabinet door**:\n     - **Timestamp:** 46.0 seconds\n     - **Reasoning:** The cabinet doo..."
+    },
+    "cabinet_bottom_right": {
+      "task_id": "cabinet_bottom_right",
+      "description": "Open the bottom right cabinet door",
+      "timestamp_seconds": 47.0,
+      "timestamp_formatted": "0:47.00",
+      "confidence_score": 2.5,
+      "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/task_grounding/task_frames/cabinet_operations/cabinet_bottom_right_t47.00s.png",
+      "context_preview": "binet doors are fully visible here as well, making it easier to interact with them.\n   - **Open the bottom left cabinet door**:\n     - **Timestamp:** 47.0 seconds\n     - **Reasoning:** The cabinet doo..."
+    },
+    "tv_remote_footrest": {
+      "task_id": "tv_remote_footrest",
+      "description": "Turn on the TV using one of the remote controls on the footrest",
+      "timestamp_seconds": 45.0,
+      "timestamp_formatted": "0:45.00",
+      "confidence_score": 2.5,
+      "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/task_grounding/task_frames/tv_controls/tv_remote_footrest_t45.00s.png",
+      "context_preview": " power outlet is visible next to the cabinet, facilitating plugging in devices.\n\n### Summary of Timestamps:\n1. **Cabinet Operations**:\n   - Top Left: 45.0 seconds\n   - Top Right: 46.0 seconds\n   - Bot..."
+    },
+    "tv_remote_table": {
+      "task_id": "tv_remote_table",
+      "description": "Turn on the TV using the remote control on the small glass table",
+      "timestamp_seconds": 46.0,
+      "timestamp_formatted": "0:46.00",
+      "confidence_score": 2.5,
+      "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/task_grounding/task_frames/tv_controls/tv_remote_table_t46.00s.png",
+      "context_preview": " to the cabinet, facilitating plugging in devices.\n\n### Summary of Timestamps:\n1. **Cabinet Operations**:\n   - Top Left: 45.0 seconds\n   - Top Right: 46.0 seconds\n   - Bottom Left: 47.0 seconds\n   - B..."
+    },
+    "radiator_thermostat": {
+      "task_id": "radiator_thermostat",
+      "description": "Adjust the room's temperature using the radiator's thermostat located below the window",
+      "timestamp_seconds": 30.0,
+      "timestamp_formatted": "0:30.00",
+      "confidence_score": 1.5,
+      "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/task_grounding/task_frames/room_environment/radiator_thermostat_t30.00s.png",
+      "context_preview": "\n\n#### 3. **Room Environment**\n   - **Adjust the room's temperature using the radiator's thermostat located below the window**:\n     - **Timestamp:** 30.0 seconds\n     - **Reasoning:** The radiator an..."
+    },
+    "window_above_radiator": {
+      "task_id": "window_above_radiator",
+      "description": "Open the window above the radiator",
+      "timestamp_seconds": 9.0,
+      "timestamp_formatted": "0:09.00",
+      "confidence_score": 2.5,
+      "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/task_grounding/task_frames/room_environment/window_above_radiator_t9.00s.png",
+      "context_preview": "6.0 seconds\n   - Bottom Left: 47.0 seconds\n   - Bottom Right: 48.0 seconds\n\n2. **TV Controls**:\n   - Footrest Remote: 20.0 seconds\n   - Table Remote: 9.0 seconds\n\n3. **Room Environment**:\n   - Tempera..."
+    },
+    "ceiling_light": {
+      "task_id": "ceiling_light",
+      "description": "Turn on the ceiling light",
+      "timestamp_seconds": 31.0,
+      "timestamp_formatted": "0:31.00",
+      "confidence_score": 2.5,
+      "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/task_grounding/task_frames/room_environment/ceiling_light_t31.00s.png",
+      "context_preview": "thermostat are visible under the window, indicating they can be adjusted directly.\n   - **Open the window above the radiator**:\n     - **Timestamp:** 31.0 seconds\n     - **Reasoning:** The window abov..."
+    },
+    "door_close": {
+      "task_id": "door_close",
+      "description": "Close the door",
+      "timestamp_seconds": 0.0,
+      "timestamp_formatted": "0:00.00",
+      "confidence_score": 2.0,
+      "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/task_grounding/task_frames/other_actions/door_close_t0.00s.png",
+      "context_preview": "soning:** The ceiling light fixture is visible in the living area, enabling easy access to turn it on.\n   - **Close the door**:\n     - **Timestamp:** 0.0 seconds\n     - **Reasoning:** The door is visi..."
+    },
+    "power_outlet": {
+      "task_id": "power_outlet",
+      "description": "Plug the device in one of the power outlets next to the cabinet",
+      "timestamp_seconds": 49.0,
+      "timestamp_formatted": "0:49.00",
+      "confidence_score": 2.0,
+      "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/task_grounding/task_frames/other_actions/power_outlet_t49.00s.png",
+      "context_preview": "eo, allowing immediate action upon entering the room.\n   - **Plug the device in one of the power outlets next to the cabinet**:\n     - **Timestamp:** 49.0 seconds\n     - **Reasoning:** The power outle..."
+    }
+  },
+  "summary_by_category": {
+    "Cabinet Operations": [
+      {
+        "task_id": "cabinet_top_left",
+        "description": "Open the top left cabinet door",
+        "timestamp_seconds": 45.0,
+        "timestamp_formatted": "0:45.00",
+        "confidence_score": 2.5,
+        "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/task_grounding/task_frames/cabinet_operations/cabinet_top_left_t45.00s.png",
+        "context_preview": "### Task Analysis:\n\n#### 1. **Cabinet Operations**\n   - **Open the top left cabinet door**: \n     - **Timestamp:** 45.0 seconds\n     - **Reasoning:** At this point, the cabinet doors are fully visible..."
+      },
+      {
+        "task_id": "cabinet_top_right",
+        "description": "Open the top right cabinet door",
+        "timestamp_seconds": 45.0,
+        "timestamp_formatted": "0:45.00",
+        "confidence_score": 2.5,
+        "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/task_grounding/task_frames/cabinet_operations/cabinet_top_right_t45.00s.png",
+        "context_preview": "### Task Analysis:\n\n#### 1. **Cabinet Operations**\n   - **Open the top left cabinet door**: \n     - **Timestamp:** 45.0 seconds\n     - **Reasoning:** At this point, the cabinet doors are fully visible..."
+      },
+      {
+        "task_id": "cabinet_bottom_left",
+        "description": "Open the bottom left cabinet door",
+        "timestamp_seconds": 46.0,
+        "timestamp_formatted": "0:46.00",
+        "confidence_score": 2.5,
+        "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/task_grounding/task_frames/cabinet_operations/cabinet_bottom_left_t46.00s.png",
+        "context_preview": "t this point, the cabinet doors are fully visible, allowing easy access to open them.\n   - **Open the top right cabinet door**:\n     - **Timestamp:** 46.0 seconds\n     - **Reasoning:** The cabinet doo..."
+      },
+      {
+        "task_id": "cabinet_bottom_right",
+        "description": "Open the bottom right cabinet door",
+        "timestamp_seconds": 47.0,
+        "timestamp_formatted": "0:47.00",
+        "confidence_score": 2.5,
+        "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/task_grounding/task_frames/cabinet_operations/cabinet_bottom_right_t47.00s.png",
+        "context_preview": "binet doors are fully visible here as well, making it easier to interact with them.\n   - **Open the bottom left cabinet door**:\n     - **Timestamp:** 47.0 seconds\n     - **Reasoning:** The cabinet doo..."
+      }
+    ],
+    "TV Controls": [
+      {
+        "task_id": "tv_remote_footrest",
+        "description": "Turn on the TV using one of the remote controls on the footrest",
+        "timestamp_seconds": 45.0,
+        "timestamp_formatted": "0:45.00",
+        "confidence_score": 2.5,
+        "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/task_grounding/task_frames/tv_controls/tv_remote_footrest_t45.00s.png",
+        "context_preview": " power outlet is visible next to the cabinet, facilitating plugging in devices.\n\n### Summary of Timestamps:\n1. **Cabinet Operations**:\n   - Top Left: 45.0 seconds\n   - Top Right: 46.0 seconds\n   - Bot..."
+      },
+      {
+        "task_id": "tv_remote_table",
+        "description": "Turn on the TV using the remote control on the small glass table",
+        "timestamp_seconds": 46.0,
+        "timestamp_formatted": "0:46.00",
+        "confidence_score": 2.5,
+        "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/task_grounding/task_frames/tv_controls/tv_remote_table_t46.00s.png",
+        "context_preview": " to the cabinet, facilitating plugging in devices.\n\n### Summary of Timestamps:\n1. **Cabinet Operations**:\n   - Top Left: 45.0 seconds\n   - Top Right: 46.0 seconds\n   - Bottom Left: 47.0 seconds\n   - B..."
+      }
+    ],
+    "Room Environment": [
+      {
+        "task_id": "radiator_thermostat",
+        "description": "Adjust the room's temperature using the radiator's thermostat located below the window",
+        "timestamp_seconds": 30.0,
+        "timestamp_formatted": "0:30.00",
+        "confidence_score": 1.5,
+        "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/task_grounding/task_frames/room_environment/radiator_thermostat_t30.00s.png",
+        "context_preview": "\n\n#### 3. **Room Environment**\n   - **Adjust the room's temperature using the radiator's thermostat located below the window**:\n     - **Timestamp:** 30.0 seconds\n     - **Reasoning:** The radiator an..."
+      },
+      {
+        "task_id": "window_above_radiator",
+        "description": "Open the window above the radiator",
+        "timestamp_seconds": 9.0,
+        "timestamp_formatted": "0:09.00",
+        "confidence_score": 2.5,
+        "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/task_grounding/task_frames/room_environment/window_above_radiator_t9.00s.png",
+        "context_preview": "6.0 seconds\n   - Bottom Left: 47.0 seconds\n   - Bottom Right: 48.0 seconds\n\n2. **TV Controls**:\n   - Footrest Remote: 20.0 seconds\n   - Table Remote: 9.0 seconds\n\n3. **Room Environment**:\n   - Tempera..."
+      },
+      {
+        "task_id": "ceiling_light",
+        "description": "Turn on the ceiling light",
+        "timestamp_seconds": 31.0,
+        "timestamp_formatted": "0:31.00",
+        "confidence_score": 2.5,
+        "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/task_grounding/task_frames/room_environment/ceiling_light_t31.00s.png",
+        "context_preview": "thermostat are visible under the window, indicating they can be adjusted directly.\n   - **Open the window above the radiator**:\n     - **Timestamp:** 31.0 seconds\n     - **Reasoning:** The window abov..."
+      }
+    ],
+    "Other Actions": [
+      {
+        "task_id": "door_close",
+        "description": "Close the door",
+        "timestamp_seconds": 0.0,
+        "timestamp_formatted": "0:00.00",
+        "confidence_score": 2.0,
+        "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/task_grounding/task_frames/other_actions/door_close_t0.00s.png",
+        "context_preview": "soning:** The ceiling light fixture is visible in the living area, enabling easy access to turn it on.\n   - **Close the door**:\n     - **Timestamp:** 0.0 seconds\n     - **Reasoning:** The door is visi..."
+      },
+      {
+        "task_id": "power_outlet",
+        "description": "Plug the device in one of the power outlets next to the cabinet",
+        "timestamp_seconds": 49.0,
+        "timestamp_formatted": "0:49.00",
+        "confidence_score": 2.0,
+        "frame_path": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/task_grounding/task_frames/other_actions/power_outlet_t49.00s.png",
+        "context_preview": "eo, allowing immediate action upon entering the room.\n   - **Plug the device in one of the power outlets next to the cabinet**:\n     - **Timestamp:** 49.0 seconds\n     - **Reasoning:** The power outle..."
+      }
+    ]
+  },
+  "frame_paths": {
+    "cabinet_top_left": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/task_grounding/task_frames/cabinet_operations/cabinet_top_left_t45.00s.png",
+    "cabinet_top_right": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/task_grounding/task_frames/cabinet_operations/cabinet_top_right_t45.00s.png",
+    "cabinet_bottom_left": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/task_grounding/task_frames/cabinet_operations/cabinet_bottom_left_t46.00s.png",
+    "cabinet_bottom_right": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/task_grounding/task_frames/cabinet_operations/cabinet_bottom_right_t47.00s.png",
+    "tv_remote_footrest": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/task_grounding/task_frames/tv_controls/tv_remote_footrest_t45.00s.png",
+    "tv_remote_table": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/task_grounding/task_frames/tv_controls/tv_remote_table_t46.00s.png",
+    "radiator_thermostat": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/task_grounding/task_frames/room_environment/radiator_thermostat_t30.00s.png",
+    "window_above_radiator": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/task_grounding/task_frames/room_environment/window_above_radiator_t9.00s.png",
+    "ceiling_light": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/task_grounding/task_frames/room_environment/ceiling_light_t31.00s.png",
+    "door_close": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/task_grounding/task_frames/other_actions/door_close_t0.00s.png",
+    "power_outlet": "/home/jtu9/reasoning/Affordance-R1-inference/qwen_scripts/results/task_grounding/task_frames/other_actions/power_outlet_t49.00s.png"
+  }
+}

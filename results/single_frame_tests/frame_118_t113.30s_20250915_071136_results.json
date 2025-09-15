@@ -1,0 +1,12 @@
+{
+  "timestamp": "20250915_071136",
+  "image_name": "frame_118_t113.30s.png",
+  "question": "What actions can be performed with objects in this image?",
+  "processing_time_seconds": 6.441701,
+  "raw_output": "<think>\nThe image shows a bookshelf with various objects placed on its.bookshelves. The objects include books, a white box, and some papers.bookshelves. The functional properties of the bookshelf include storage and display purposes.bookshelves. The objects on the shelves canbookshelves. can can\n<rethink>\nThe bookshelf has glass doors, which suggests\n<rethink>\nThe bookshelf has glass doors, which\n</rethink> \n\n<answer>[{\"bbox_2d\": [ [3,3,689,556], \"point_2d\": [125,424], \"affbox_2d\":  [3,527,646,839],,point_2d\":  [75,656]}], \"afffordance\":  [open\"]</answer>",
+  "thinking_process": "",
+  "rethinking_process": "The bookshelf has glass doors, which suggests\n<rethink>\nThe bookshelf has glass doors, which",
+  "predicted_bboxes": [],
+  "predicted_points": [],
+  "num_predictions": 0
+}

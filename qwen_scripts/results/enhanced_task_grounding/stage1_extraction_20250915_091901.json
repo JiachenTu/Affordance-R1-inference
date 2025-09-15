@@ -1,0 +1,41 @@
+{
+  "extraction_timestamp": "2025-09-15T09:19:01.233841",
+  "video_path": "/shared/BIOE486/SP25/users/ukd1/misc/testset_samples/421372/42445448/42445448.mp4",
+  "video_info": {
+    "path": "/shared/BIOE486/SP25/users/ukd1/misc/testset_samples/421372/42445448/42445448.mp4",
+    "total_frames": 7383,
+    "fps": 60.02,
+    "width": 1920,
+    "height": 1440,
+    "codec": 875967080,
+    "file_size": 201558983,
+    "duration_seconds": 123.00899700099966,
+    "duration_formatted": "2:03.01"
+  },
+  "extraction_params": {
+    "max_frames_per_task": 8,
+    "min_temporal_spacing": 3.0,
+    "dense_sampling_window": 10.0,
+    "dense_sampling_density": 2.0
+  },
+  "extraction_stats": {
+    "systematic_samples": 8,
+    "vlm_detected": 7,
+    "dense_candidates": 87,
+    "spaced_candidates": 28,
+    "final_extracted": 16
+  },
+  "task_assignments": {
+    "cabinet_top_left": 16,
+    "cabinet_top_right": 16,
+    "cabinet_bottom_left": 16,
+    "cabinet_bottom_right": 16,
+    "tv_remote_footrest": 16,
+    "tv_remote_table": 16,
+    "radiator_thermostat": 16,
+    "window_above_radiator": 16,
+    "ceiling_light": 16,
+    "door_close": 16,
+    "power_outlet": 16
+  }
+}

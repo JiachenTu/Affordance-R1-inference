@@ -1,0 +1,23 @@
+QWEN2.5-VL VIDEO CAPTIONING RESULTS
+============================================================
+
+Video: 42445448.mp4
+Task: captioning
+Question: Provide a detailed frame-by-frame or segment-by-segment description of what happens in this video. Include timing information where relevant.
+Processing Time: 154.11 seconds
+Timestamps Found: 0
+
+FULL MODEL OUTPUT:
+------------------------------
+The video begins with an interior view of a living room, showcasing a modern and cozy setup. The camera starts by panning across the space, revealing a gray sofa adorned with colorful floral cushions that add vibrancy to the neutral tones of the room. A glass side table is positioned next to the sofa, holding decorative items such as a pink salt lamp, a vase with dried flowers, and a small sculpture.
+
+As the camera continues its movement, it captures more details of the room:
+- **Frame 1:** The initial shot focuses on the sofa and the side table.
+- **Frame 2:** The camera pans slightly upward, showing part of the wall and a corner of another piece of furniture.
+- **Frame 3:** The focus shifts back down to highlight the side table's contents: a pink salt lamp, a vase with dried flowers, and a small sculpture.
+- **Frame 4:** The camera then moves to show the full length of the sofa, emphasizing the arrangement of the cushions and the overall comfort of the seating area.
+- **Frame 5:** The scene transitions to include a glimpse of a Christmas tree decorated with lights and ornaments near a window, suggesting a festive season setting.
+- **Frame 6:** The camera pans further into the room, revealing a white entertainment unit with shelves containing books, DVDs, and other miscellaneous items.
+- **Frame 7:** The final frames capture additional elements like yoga mats and a purple blanket draped over the side of the entertainment unit, indicating a multifunctional use of the space for relaxation and leisure activities.
+
+Throughout these frames, the lighting remains consistent, providing a warm ambiance typical of indoor settings during the day. The video effectively showcases the layout and decor of the living room, highlighting both aesthetic appeal and practicality.
